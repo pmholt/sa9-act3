@@ -1,4 +1,4 @@
-require 'car_class'
+require_relative 'car_class'
 
 RSpec.describe Car do
     let(:my_car) {Car.new("Ford", "F-150", 2022, "Gray")}
@@ -24,7 +24,7 @@ RSpec.describe Car do
         it "decreases car's speed" do
             my_car.accelerate(25)
             my_car.brake(25)
-            expect(my_car).to eq(0)
+            expect(my_car.speed).to eq(0)
         end
     end
 
