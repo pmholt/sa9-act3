@@ -1,4 +1,4 @@
-require_relative 'car_class'
+require 'car_class'
 
 RSpec.describe Car do
     let(:my_car) {Car.new("Ford", "F-150", 2022, "Gray")}
